@@ -52,7 +52,8 @@ async function loadDays() {
   const fm = FileManager.local();
   const cache = fm.joinPath(fm.documentsDirectory(), "tomiya-jma.json");
   try {
-    const json = await new Request(SRC).loadJSON();
+    const req = new Request(SRC); req.timeoutInterval = 8;
+    const json = await req.loadJSON();
     fm.writeString(cache, JSON.stringify(json));
     return { days: parse(json), offline: false };
   } catch (e) {
