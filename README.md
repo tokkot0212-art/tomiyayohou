@@ -10,3 +10,10 @@
 
 ## ホーム画面に追加
 GitHub Pagesで公開したURLをSafariで開き、共有 →「ホーム画面に追加」。
+
+## ホーム画面ウィジェット（○△×が自動で変わる）
+iPhoneアプリ「Scriptable」（無料）で `widget.js` を使います。
+1. App Storeで Scriptable をインストール
+2. Scriptableで右上の「＋」→ widget.js の中身を貼り付け → 名前を「洗濯」にして保存
+3. ホーム画面を長押し →「＋」→ Scriptable の小サイズを追加
+4. 追加したウィジェットを長押し →「ウィジェットを編集」→ Script で「洗濯」を選ぶ
